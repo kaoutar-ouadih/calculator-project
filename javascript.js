@@ -25,6 +25,7 @@ function operate(firstNum, secondNum, operator){
     switch(operator){
         case "+" :
             add(firstNum, secondNum);
+            // console.log(add(firstNum, secondNum));
             break;
         case "-" :
             substract(firstNum, secondNum);
@@ -39,3 +40,6 @@ function operate(firstNum, secondNum, operator){
             "No operator found!";
     }
 }
+// let reuslt = 
+// console.log(operate(1, 5, "+"));
+// console.log(reuslt);
