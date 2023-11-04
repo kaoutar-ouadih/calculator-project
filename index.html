@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css"/>
+    <script src="./javascript.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div id="container">
-        <div id="display"> display </div>
+        <div id="display"> <p> display </p></div>
         <div class="row">
             <button class="btn" id="clear"> C </button>
-            <button class="btn"> / </button>
-            <button class="btn"> * </button>
+            <button value="/" class="btn operation"> / </button>
+            <button value="*" class="btn operation"> * </button>
         </div>
         <div class="row">
-            <button class="btn"> 7 </button>
-            <button class="btn"> 8 </button>
-            <button class="btn"> 9 </button>
-            <button class="btn"> - </button>
+            <button value="7" class="btn numbers"> 7 </button>
+            <button value="8" class="btn numbers"> 8 </button>
+            <button value="9" class="btn numbers"> 9 </button>
+            <button value="-" class="btn operation"> - </button>
         </div>
         <div class="row">
             <div class="subRow">
-                <button class="btn"> 4 </button>
-                <button class="btn"> 5 </button>
-                <button class="btn"> 6 </button>
-                <button class="btn"> 1 </button>
-                <button class="btn"> 2 </button>
-                <button class="btn"> 3 </button>
+                <button value="4" class="btn numbers"> 4 </button>
+                <button value="5" class="btn numbers"> 5 </button>
+                <button value="6" class="btn numbers"> 6 </button>
+                <button value="1" class="btn numbers"> 1 </button>
+                <button value="2" class="btn numbers"> 2 </button>
+                <button value="3" class="btn numbers"> 3 </button>
             </div>
-            <button class="btn"> + </button>
+            <button value="+" class="btn operation"> + </button>
         </div>
         <div class="row">
-            <button class="btn"> 0 </button>
-            <button class="btn"> 00 </button>
-            <button class="btn"> . </button>
-            <button class="btn" id="equal"> = </button>
+            <button value="0" class="btn numbers"> 0 </button>
+            <button value="00" class="btn numbers"> 00 </button>
+            <button value="." class="btn"> . </button>
+            <button value="=" class="btn" id="equal"> = </button>
         </div>
     </div>
 </body>
