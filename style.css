@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'Digital-7';
+    src: url('./fonts/digital-7-font/Digital7-rg1mL.ttf') format('truetype');
+    /* Add more src lines for different font formats if you have them */
+    font-weight: bold;
+    /* font-style: normal;  */
+  }
 body{
    display: flex;
    justify-content: center;
+   font-family: "Digital-7";
    
 }
 #container{
@@ -21,7 +29,7 @@ body{
     align-items: center;
     padding: 10px;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 28px;
 }
 .row{
     display: flex;
@@ -35,7 +43,18 @@ body{
     border-radius: 12px;
     color: white;
     background-color: #434343;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    transition: border 1s;  /* Add a smooth transition for the border change */ 
+    font-family: "Digital-7";
+    font-size: 25px;
 }
+.btn:active {
+    border-bottom: 3px solid black ; /* New border style when button is clicked */
+    border-right: 3px solid black;
+    border-left: none;
+    border-top: none;
+  }
 #clear{
     min-width: 236px;
     height: 101px;
@@ -48,5 +67,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 29px;
+}
+#equal{
+    background-color: #1b7ecc;
 }
 
