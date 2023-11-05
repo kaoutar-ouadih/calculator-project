@@ -14,8 +14,12 @@ function divide(a, b){
     if(b == 0){
         return "Math Error";
     }
-    resultat = a / b ;
-    return resultat.toFixed(2);
+    else if ( (a / b) % 1 != 0) {
+        resultat = a / b ;
+        return resultat.toFixed(2);
+    }
+    else 
+    return a /b ;  
 }
 
 let firstNum;
